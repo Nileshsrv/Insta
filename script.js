@@ -13,7 +13,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   }
 
   const btn = document.getElementById('button');
-  btn.value = 'Sending...';
+  btn.value = 'Loading...';
 
   emailjs.sendForm('service_thekedaar', 'template_fsl427b', this)
     .then(() => {
